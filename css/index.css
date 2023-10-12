@@ -3,14 +3,14 @@ html {
   justify-content: center;
 }
 
+.seventy-percent {
+  max-width: 70%;
+}
+
 body {
   width: 960px;
 }
 
 .dropdown-menu > li > a:hover {
   background-color: #b4db5a;
-}
-
-.dropdown-menu {
-  background-color: #91c517;
 }

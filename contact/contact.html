@@ -3,21 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="../css/index.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <title>Who Am I</title>
+    <title>Contact</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg" style="background-color: #a1d719">
       <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html"
+        <a class="navbar-brand" href="../index.html"
           ><img
-            src="./images/logo.png"
+            src="../images/logo.png"
             alt="Logo"
             width="60"
             height="30"
@@ -27,7 +27,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index.html"
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../index.html"
                 >Home</a
               >
             </li>
@@ -43,14 +46,18 @@
               </a>
               <ul class="dropdown-menu" style="background-color: #91c517">
                 <li>
-                  <a class="dropdown-item" href="./about.html">About</a>
+                  <a class="dropdown-item" href="../about/about.html">About</a>
                 </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="./history.html">History</a>
+                  <a class="dropdown-item" href="../about/history.html"
+                    >History</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="./whoami.html">Who am I</a>
+                  <a class="dropdown-item" href="../about/whoami.html"
+                    >Who am I</a
+                  >
                 </li>
               </ul>
             </li>
@@ -66,18 +73,24 @@
               </a>
               <ul class="dropdown-menu" style="background-color: #91c517">
                 <li>
-                  <a class="dropdown-item" href="./balls.html"
+                  <a class="dropdown-item" href="../balls/balls.html"
                     >Sports with ball</a
                   >
                 </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a href="./volley.html" class="dropdown-item">Volley</a>
+                  <a href="../balls/volley.html" class="dropdown-item"
+                    >Volley</a
+                  >
                 </li>
                 <li>
-                  <a href="./soccer.html" class="dropdown-item">Soccer</a>
+                  <a href="../balls/soccer.html" class="dropdown-item"
+                    >Soccer</a
+                  >
                 </li>
-                <li><a href="./rugby.html" class="dropdown-item">Rugby</a></li>
+                <li>
+                  <a href="../balls/rugby.html" class="dropdown-item">Rugby</a>
+                </li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -92,16 +105,20 @@
               </a>
               <ul class="dropdown-menu" style="background-color: #91c517">
                 <li>
-                  <a class="dropdown-item" href="./nomaterial.html"
+                  <a class="dropdown-item" href="../nomaterial/nomaterial.html"
                     >No material needed</a
                   >
                 </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a href="./running.html" class="dropdown-item">Running</a>
+                  <a href="../nomaterial/running.html" class="dropdown-item"
+                    >Running</a
+                  >
                 </li>
                 <li>
-                  <a href="./yoga.html" class="dropdown-item">Yoga</a>
+                  <a href="../nomaterial/yoga.html" class="dropdown-item"
+                    >Yoga</a
+                  >
                 </li>
               </ul>
             </li>
@@ -117,11 +134,15 @@
               </a>
               <ul class="dropdown-menu" style="background-color: #91c517">
                 <li>
-                  <a class="dropdown-item" href="./contact.html">Contact</a>
+                  <a class="dropdown-item" href="../contact/contact.html"
+                    >Contact</a
+                  >
                 </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a href="./location.html" class="dropdown-item">Location</a>
+                  <a href="../contact/location.html" class="dropdown-item"
+                    >Location</a
+                  >
                 </li>
               </ul>
             </li>
@@ -130,57 +151,74 @@
       </div>
     </nav>
     <article>
-      <h1>Who am I</h1>
-      <div class="personalities">
-        <img src="./images/selfie.jpg" alt="Baptiste Garrido" />
-        <div class="right">
-          <h2>President</h2>
-          <h3>Baptiste Garrido</h3>
-          <p>
-            President since 1999, Baptiste Garrido, I, try to do his best all
-            the time
-          </p>
+      <h1 class="text-center m-3">Contact me</h1>
+      <p>If you need help for anything, please contact me :</p>
+      <form
+        action="http://vip.groupehn.com:20003/html/infospost.php"
+        method="post"
+      >
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            name="lastname"
+            class="form-control"
+            id="floatingName"
+            placeholder="Dupond"
+            required
+          />
+          <label for="floatingName">Lastname</label>
         </div>
-      </div>
-      <div class="personalities">
-        <img src="./images/selfie.jpg" alt="Baptiste Garrido" />
-        <div class="right">
-          <h2>Runner</h2>
-          <h3>Baptiste Garrido</h3>
-          <p>
-            Runner since 1999, Baptiste Garrido, I, try to do his best all the
-            time
-          </p>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            name="firstname"
+            class="form-control"
+            id="firstname"
+            placeholder="Jacque"
+            required
+          />
+          <label for="firstname">Firstname </label>
         </div>
-      </div>
-      <div class="personalities">
-        <img src="./images/selfie.jpg" alt="Baptiste Garrido" />
-        <div class="right">
-          <h2>Volley-ball player</h2>
-          <h3>Baptiste Garrido</h3>
-          <p>
-            Volley-ball player since 1999, Baptiste Garrido, I, try to do his
-            best all the time
-          </p>
+        <div class="form-floating mb-3">
+          <input
+            class="form-control"
+            id="mail"
+            type="email"
+            name="email"
+            placeholder="your@mail.com"
+            required
+          />
+          <label for="email">Email</label>
         </div>
-      </div>
-      <div class="personalities">
-        <img src="./images/selfie.jpg" alt="Baptiste Garrido" />
-        <div class="right">
-          <h2>Climber</h2>
-          <h3>Baptiste Garrido</h3>
-          <p>
-            Climber since 1999, Baptiste Garrido, I, try to do his best all the
-            time
-          </p>
+        <div class="form-floating mb-3">
+          <textarea
+            style="height: 100px"
+            class="form-control"
+            placeholder=""
+            name="request"
+            id="request"
+            required
+          ></textarea>
+          <label for="request">Your request</label>
         </div>
-      </div>
-      <p>
-        I notice that it's a little too focused on myself, but I'm the only one
-        in the company
-      </p>
+        <div class="form-floating mb-3">
+          <select class="form-select" name="country" id="country" required>
+            <option value="" selected>--Please choose your country--</option>
+            <option value="brasil">Brasil</option>
+            <option value="canada">Canada</option>
+            <option value="england">England</option>
+            <option value="france">France</option>
+            <option value="spain">Spain</option>
+            <option value="usa">USA</option>
+          </select>
+          <label for="country">Country</label>
+        </div>
+        <div class="text-md-end">
+          <input class="btn btn-primary" type="submit" value="Send request" />
+        </div>
+      </form>
     </article>
-    <footer>
+    <footer class="text-center mt-3">
       <p>copyright 2023</p>
     </footer>
     <script
