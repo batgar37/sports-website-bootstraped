@@ -1,0 +1,16 @@
+html {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  width: 960px;
+}
+
+.dropdown-menu > li > a:hover {
+  background-color: #b4db5a;
+}
+
+.dropdown-menu {
+  background-color: #91c517;
+}
